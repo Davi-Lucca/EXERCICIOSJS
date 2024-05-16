@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 4</title>
+</head>
+<body>
+    <script>
+        // Solicita o ano de nascimento ao usuário
+      let anoNascimento = prompt("Digite o ano de nascimento:");
+
+    // Obtem o ano atual
+    let anoAtual = new Date().getFullYear();
+
+    // Calcula a idade
+    let idade = anoAtual - anoNascimento;
+
+    // Verifica se a pessoa é maior de idade
+    if (idade >= 18) {
+        console.log("Você já é maior de idade.");
+    } else {
+        console.log("Você ainda não é maior de idade.");
+    }
+    </script>
+</body>
+</html>

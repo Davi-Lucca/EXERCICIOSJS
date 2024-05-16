@@ -1,0 +1,39 @@
+                                     [LISTA DE EXERCICIOS 1]
+
+
+
+
+ (1)- Uma variável em programação é um espaço na memória do computador designado para armazenar dados que podem
+  ser alterados durante a execução de um programa. Ela é uma maneira de dar um nome a um valor para que possamos 
+  usar e manipular esse valor ao longo do código.
+  São necessárias para armazenar dados que o programa precisa processar e também  facilita a atualização e
+  manutenção do código, uma vez que as mudanças podem ser feitas em um único lugar.
+ 
+ (2)- Tipagem dinâmica em JS significa que o tipo das variáveis é determinado automaticamente em tempo de execução,
+  em vez de ser declarado explicitamente no código. Em outras palavras, uma variável pode ser inicializada com um
+  valor de um tipo e posteriormente ser atribuída a um valor de um tipo diferente. 
+  Tipagem estática, por outro lado, é quando o tipo de uma variável é declarado explicitamente e não pode ser 
+  alterado. Linguagens com tipagem estática, como Java e C++, exigem que você declare o tipo de cada variável e  
+  esse tipo não pode mudar.
+
+ (3)- Escolher nomes descritivos para variáveis é crucial para a legibilidade e manutenção do código. Nomes 
+  descritivos ajudam a comunicar a intenção do código, facilitando a compreensão do que o programa faz, não
+  só para quem o escreveu, mas também para outros desenvolvedores que possam trabalhar no mesmo código no futuro.
+
+
+  (5)-                   [VAR]
+   Escopo: Função ou global. Não respeita o escopo de bloco.
+   Hoisting: Sim, é içada para o topo do seu escopo, mas inicializada como undefined.
+   Redefinição: Pode ser redeclarada dentro do mesmo escopo.
+
+                         [LET]
+   Escopo: Bloco (tudo entre {}), respeita o escopo de bloco.
+   Hoisting: Sim, é içada, mas não pode ser acessada antes da declaração devido à "temporal dead zone" (TDZ).
+   Redefinição: Não pode ser redeclarada dentro do mesmo escopo.
+
+                         [CONST]
+   Escopo: Bloco. "  "
+   Hoisting: Sim, é içada, mas não pode ser acessada antes da declaração (TDZ).
+   Imutabilidade: Deve ser inicializada na declaração e não pode ser reatribuída. No entanto, se for um objeto 
+   ou array, suas propriedades ou elementos podem ser modificados.
+  

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 5</title>
+</head>
+<body>
+    <script>
+        // Solicita a escolha do usuário
+       let escolha = prompt("Escolha a conversão desejada:\n1. Celsius para Fahrenheit\n2. Fahrenheit para Celsius");
+
+        // Verifica a escolha do usuário e executar a conversão
+        if (escolha === "1") {
+             // Celsius para Fahrenheit
+            let celsius = parseFloat(prompt("Digite a temperatura em Celsius:"));
+            let fahrenheit = (celsius * 9/5) + 32;
+            console.log(celsius + "°C equivale a " + fahrenheit.toFixed(2) + "°F");
+        } else if (escolha === "2") {
+            // Fahrenheit para Celsius
+            let fahrenheit = parseFloat(prompt("Digite a temperatura em Fahrenheit:"));
+            let celsius = (fahrenheit - 32) * 5/9;
+            console.log(fahrenheit + "°F equivale a " + celsius.toFixed(2) + "°C");
+        } else {
+            console.log("Escolha inválida.");
+        }
+    </script>
+</body>
+</html>

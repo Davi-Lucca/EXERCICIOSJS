@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Questão 5</title>
+            <style>
+                img{
+                    
+                    width: 600px;
+                    height: 400px;
+                }
+            </style>
+        </head>
+        <body>
+            <img id="imagem" src="img/ney.jpg" alt="Imagem">
+            <br><br>
+             <button onclick="alterarTamanho(100)">Pequena</button>
+             <button onclick="alterarTamanho(300)">Média</button>
+             <button onclick="alterarTamanho(500)">Grande</button>
+             
+             
+         <script>
+             function alterarTamanho(tamanho) {
+                document.getElementById("imagem").style.width = tamanho + "px";
+                document.getElementById("imagem").style.height = tamanho + "px";
+              }
+         </script>
+         </body>
+         </html>

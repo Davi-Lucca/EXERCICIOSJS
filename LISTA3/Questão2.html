@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 2</title>
+    <style>
+        body {
+            margin-top: 10%;
+        }
+        h1 {
+            text-align: center;
+            cursor: pointer; /* Muda o cursor para indicar que o h1 é clicável */
+        }
+        p {
+            cursor: pointer; /* Muda o cursor para indicar que o parágrafo é clicável */
+        }
+    </style>
+</head>
+<body>
+    <hr>
+    <h1 id="titulo"><p>Quer ficar rico? Clique nessa mensagem. </p></h1>
+    <p>Se ficar verde é porque não vair dar certo </p>
+    <hr>
+    <script>
+        // Função que altera a cor do texto do h1 para verde
+        function alterarCor() {
+            document.getElementById("titulo").style.color = "green";
+        }
+        
+
+        // Adiciona um ouvinte de eventos para o clique no h1
+        document.getElementById("titulo").addEventListener("click", alterarCor);
+    </script>
+</body>
+</html>

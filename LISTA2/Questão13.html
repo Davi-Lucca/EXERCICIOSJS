@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 13</title>
+</head>
+<body>
+    <script>
+        // Gera um número aleatório entre 1 e 100
+        let numeroSecreto = Math.floor(Math.random() * 100) + 1;
+        console.log("Você está no meu jogo de adivinha! Tente adivinhar o número secreto entre 1 e 100 e ganhe o prêmio.");
+
+        // Inicializa o contador de tentativas
+        let tentativas = 0;
+
+        // Loop para permitir até 10 tentativas
+        while (tentativas < 10) {
+            // Solicitar uma tentativa ao usuário
+            let palpite = parseInt(prompt("Tentativa " + (tentativas + 1) + ": Digite um número:"));
+
+        // Verificar se o palpite está correto, menor ou maior que o número secreto
+            if (palpite === numeroSecreto) {
+                console.log("Parabéns! Você acertou o número secreto.");
+                break;
+            } else if (palpite < numeroSecreto) {
+                console.log("O número secreto é maior que " + palpite + ".");
+            } else {
+                console.log("O número secreto é menor que " + palpite + ".");
+            }
+
+            // Incrementa o contador de tentativas
+            tentativas++;
+        }
+
+            // Se o usuário não acertar após 10 tentativas
+        if (tentativas === 10) {
+            console.log("Game Over! O número secreto era: " + numeroSecreto);
+        }
+    </script>
+</body>
+</html>

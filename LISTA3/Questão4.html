@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 4</title>
+    <style>
+        body {
+            text-align: center; 
+            margin-top: 50px; 
+        }
+        img {
+            width: 250px;
+            height: 250px;
+            max-width: 50%; 
+            height: auto; /* Mantém a proporção da imagem */
+        }
+        button {
+            font-size: 16px; /* Aumenta o tamanho da fonte do botão */
+            padding: 10px 20px; /* Adiciona espaçamento interno ao botão */
+            margin-top: 20px; /* Adiciona margem acima do botão */
+        }
+    </style>
+</head>
+<body>
+    <img id="imagem" src="img/criança.jpg" alt="Criança">
+    <br>
+    <button onclick="trocarImagem()">Crescer</button>
+
+    <script>
+        function trocarImagem() {
+            document.getElementById("imagem").src = "img/adulto.jpg";
+            console.log("Imagem trocada com sucesso!");
+        }
+    </script>
+</body>
+</html>
