@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 3</title>
+</head>
+<body>
+    <script>
+        // Solicita as três notas ao usuário
+     let nota1 = parseFloat(prompt("Digite a primeira nota:"));
+     let nota2 = parseFloat(prompt("Digite a segunda nota:"));
+     let nota3 = parseFloat(prompt("Digite a terceira nota:"));
+
+     // Calcula a média
+     let media = (nota1 + nota2 + nota3) / 3;
+
+     // Verifica se o aluno foi aprovado ou reprovado
+     if (media >= 7) {
+         console.log("Parabéns! Você foi aprovado com média " + media.toFixed(2));
+     } else {
+         console.log("Infelizmente, você foi reprovado com média " + media.toFixed(2));
+     }
+    </script>
+</body>
+</html>

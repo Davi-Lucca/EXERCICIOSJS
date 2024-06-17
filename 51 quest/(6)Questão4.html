@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caixa Colorida</title>
+    <style>
+        #box {
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="box"></div>
+    <script src="script.js"></script>
+</body>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+    const box = document.getElementById('box');
+
+    box.addEventListener('mouseover', function() {
+        box.style.backgroundColor = 'red';
+    });
+
+    box.addEventListener('mouseout', function() {
+        box.style.backgroundColor = 'blue';
+    });
+});
+
+    </script>
+
+</html>

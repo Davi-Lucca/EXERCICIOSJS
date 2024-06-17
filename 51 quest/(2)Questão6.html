@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 6</title>
+</head>
+<body>
+    <script>
+        // Solicita dois números ao usuário
+        let num1 = parseInt(prompt("Digite o primeiro número:"));
+        let num2 = parseInt(prompt("Digite o segundo número:"));
+
+        // Verifica se pelo menos um dos números é múltiplo do outro
+        if (num1 % num2 === 0 || num2 % num1 === 0) {
+              console.log("Pelo menos um dos números é múltiplo do outro.");
+        } else {
+              console.log("Nenhum dos números é múltiplo do outro.");
+        }
+    </script>
+</body>
+</html>

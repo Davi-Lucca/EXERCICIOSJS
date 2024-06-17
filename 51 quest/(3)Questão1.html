@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+        <html lang="en">
+        <head>
+             <meta charset="UTF-8">
+             <meta name="viewport" content="width=device-width, initial-scale=1.0">
+             <title>Questão 1</title>
+             <style>
+                body{
+                    margin-top: 6%;
+            
+                }
+                h1{
+                    text-align: center;
+                }
+                .button-container{
+                    text-align: center;
+                    font-size: 1.5em; /* Aumenta o tamanho da fonte do botão */
+                    padding: 50px 70px; /* Aumenta o espaçamento interno do botão */
+                }
+                
+             </style>
+        </head>
+        <body>
+            <hr>
+             <h1 id="texto">Site Mágico</h1>
+             <div class="button-container">
+             <button onclick="alterarTexto()">Clique aqui</button>
+            </div>
+            <hr>
+             <script>
+                //mensagem subliminar
+                  function alterarTexto() {
+                  document.getElementById("texto").textContent = "Aqui está a surpresa!";
+                  }
+             </script>
+        </body>
+        </html>

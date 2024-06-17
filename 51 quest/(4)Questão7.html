@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let variavelGlobal = "Eu sou global";
+
+function testeEscopo() {
+    let variavelLocal = "Eu sou local";
+    console.log(variavelGlobal); // Acessível
+    console.log(variavelLocal);  // Acessível
+}
+
+testeEscopo();
+console.log(variavelGlobal); // Acessível
+// console.log(variavelLocal); // Não acessível, erro!
+
+
+    </script>
+</body>
+</html>

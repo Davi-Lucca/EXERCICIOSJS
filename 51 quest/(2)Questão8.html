@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 8</title>
+</head>
+<body>
+    <script>
+        // Solicita ao usuário para escolher um prato do menu
+        let prato = prompt("Escolha um prato do menu: Buchada, Sushi, Salmão, Picado");
+
+        // Exibe o preço e descrição do prato escolhido
+        switch (prato) {
+        case "Buchada":
+             console.log("Buchada - Preço: R$70, Descrição: Buchada de bode fresquinha.");
+        break;
+        case "Sushi":
+             console.log("Sushi - Preço: R$40, Descrição: Sushi artesanal com acompanhamento.");
+        break;
+        case "Salmão":
+             console.log("Salmão - Preço: R$100, Descrição: Salmão fresco com vegetais e molhos.");
+        break;
+        case "Picado":
+             console.log("Picado - Preço: R$60, Descrição: Picado de boi acompanhado de molho.");
+        break;
+             default:
+             console.log("Prato não disponível no menu.");
+        }
+    </script>
+</body>
+</html>

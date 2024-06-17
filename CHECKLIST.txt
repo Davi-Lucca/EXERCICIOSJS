@@ -1,0 +1,111 @@
+(OPERADORES)
+No código JavaScript que você forneceu, há vários exemplos de operadores sendo utilizados. Vamos analisar alguns trechos onde esses operadores são aplicados:
+
+Operadores de Atribuição: São utilizados para atribuir valores a variáveis, como por exemplo:
+var estoqueInicial = {
+    notebook: 100,
+    fonebass: 100,
+    // outros produtos...
+    notebookdellxps16: 100
+};       Aqui, o operador : é usado para associar chaves aos valores no objeto estoqueInicial.
+Operadores de Comparação: São utilizados para comparar valores e condições, como por exemplo:
+if (estoque[produto] !== undefined && quantidade <= estoque[produto]) {
+    // código
+} else {
+    // código
+}
+Neste caso, !== é um operador de comparação estrita que verifica se estoque[produto] não é undefined.
+ Também é usado o operador <= para verificar se a quantidade solicitada é menor ou igual ao estoque disponível.
+
+Operadores Aritméticos: São usados para realizar operações matemáticas, como por exemplo:
+if (estoque[produto] !== undefined && quantidade <= estoque[produto]) {
+    // código
+} else {
+    // código
+}
+Neste caso, !== é um operador de comparação estrita que verifica se estoque[produto] não é undefined. 
+Também é usado o operador <= para verificar se a quantidade solicitada é menor ou igual ao estoque disponível.
+
+Operadores Aritméticos: São usados para realizar operações matemáticas, como por exemplo:
+estoqueAtual[produto] -= quantidade;
+Aqui, -= é um operador de subtração abreviada, equivalente a estoqueAtual[produto] = estoqueAtual[produto] - quantidade;.
+
+Operadores Lógicos: São usados para combinar expressões lógicas, como por exemplo:
+if (!localStorage.getItem("estoque")) {
+    // código
+}
+O operador ! é o operador lógico de negação, que inverte o valor booleano de uma expressão.
+
+Esses são exemplos de como os operadores são aplicados no código JavaScript para gerenciar 
+o estoque de produtos e processar pedidos com base na disponibilidade. Cada um desses operadores
+ desempenha um papel importante na funcionalidade geral do sistema.
+
+(COMANDOS DE SAÍDA)
+No contexto do código JavaScript fornecido, os comandos de saída mais comuns são aqueles que utilizam a
+ função alert() para exibir mensagens para o usuário. Aqui estão os principais comandos de saída encontrados no código:
+
+(ARRAY)
+Funções que utilizam Arrays:
+Função atualizarEstoque(produto, quantidade)
+function atualizarEstoque(produto, quantidade) {
+    var estoqueAtual = JSON.parse(localStorage.getItem("estoque"));
+    if (estoqueAtual[produto] !== undefined) {
+        estoqueAtual[produto] -= quantidade;
+        localStorage.setItem("estoque", JSON.stringify(estoqueAtual));
+    } else {
+        alert("Produto não encontrado no estoque.");
+    }
+}
+Arrays Usados: estoqueAtual é um objeto JavaScript que contém os produtos como chaves e suas quantidades como valores.
+String Usada: "estoque" é uma chave no localStorage, que armazena o estoque como uma string JSON.
+
+(STRING)
+Função var produtoId = urlParams.get('produto');:
+
+Esta função usa o método get() do objeto URLSearchParams, que permite obter valores de parâmetros de consulta na URL.
+Uso de localStorage com Strings:
+
+As funções que utilizam localStorage convertem objetos JavaScript em strings JSON usando JSON.stringify() e recuperam essas strings usando JSON.parse(). Exemplo:
+var estoqueAtual = JSON.parse(localStorage.getItem("estoque"));
+localStorage.setItem("estoque", JSON.stringify(estoqueAtual));
+
+(MODULOS INTERNOS)
+Módulos Internos
+Os módulos internos referem-se aos módulos padrão ou built-in do JavaScript, que estão disponíveis sem a necessidade de importação explícita em ambientes como navegadores ou Node.js. Alguns exemplos comuns de módulos internos são:
+
+localStorage: Usado para armazenar dados no navegador.
+document: Representa o DOM (Document Object Model) atual.
+JSON: Objeto para trabalhar com JSON.
+No código fornecido:
+
+localStorage é usado para armazenar e recuperar dados localmente.
+document é utilizado para interagir com o DOM.
+
+(ADIÇÃO DE EVENTOS)
+Sim, no código JavaScript fornecido há várias adições de eventos utilizando addEventListener. 
+Esses eventos são usados para detectar interações do usuário com elementos específicos da página e executar ações correspondentes. 
+Aqui estão os principais trechos onde addEventListener é utilizado:
+
+Evento de clique para finalizar pedido geral:
+document.getElementById("finalizarPedidoBtn").addEventListener("click", function() {
+    // Código para finalizar pedido geral
+});
+Este trecho adiciona um ouvinte de evento de clique ao botão com o ID finalizarPedidoBtn. 
+Quando o usuário clica neste botão, uma função é executada para processar o pedido do produto selecionado.
+
+(FUNÇÕES SÍNCRONAS)
+Funções Síncronas:
+atualizarEstoque(produto, quantidade)
+Esta função é síncrona porque ela atualiza o estoque localmente (no localStorage) após um pedido ser finalizado. 
+Não envolve operações assíncronas como requisições HTTP.
+
+("ASSÍNCRONAS)
+
+(Realizar testes automatizados (função) a partir de algum framework;)
+
+(vIDEO DO TESTE, OU TESTAR NA HORA)
+
+
+
+
+

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function verificarElegibilidade(rendaMensal, idade) {
+    const rendaMinima = 3000;
+    const idadeMinima = 18;
+    const idadeMaxima = 65;
+
+    if (rendaMensal > rendaMinima && idade >= idadeMinima && idade <= idadeMaxima) {
+        console.log("Você é elegível para o empréstimo.");
+    } else {
+        console.log("Você não é elegível para o empréstimo.");
+    }
+}
+
+// Testando o programa
+const rendaMensal = parseFloat(prompt("Digite sua renda mensal:"));
+const idade = parseInt(prompt("Digite sua idade:"));
+
+verificarElegibilidade(rendaMensal, idade);
+
+    </script>
+</body>
+</html>

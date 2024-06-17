@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const convert = require('convert4');
+
+let days = 5;
+let gigabytes = 10;
+
+let minutes = convert(days, 'days').to('minutes');
+let bytes = convert(gigabytes, 'gigabytes').to('bytes');
+
+console.log(`${days} dias são equivalentes a ${minutes} minutos.`);
+console.log(`${gigabytes} gigabytes são equivalentes a ${bytes} bytes.`);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 6</title>
+    <style>
+        .miniatura {
+            width: 100px;
+            height: 100px;
+            margin: 50px;
+            cursor: pointer;
+        }
+
+        #imagem img {
+            max-width: 100%; /* Garante que a imagem não exceda a largura do contêiner */
+            height: auto; /* Mantém a proporção da imagem */
+        }
+    </style>
+</head>
+<body>
+    <img class="miniatura" src="img/criança.jpg" alt="Miniatura 1" onclick="mostrarImagem('img/criança.jpg')">
+    <img class="miniatura" src="img/adulto.jpg" alt="Miniatura 2" onclick="mostrarImagem('img/adulto.jpg')">
+    <img class="miniatura" src="img/ney.jpg" alt="Miniatura 3" onclick="mostrarImagem('img/ney.jpg')">
+    <br><br>
+    <div id="imagem"></div>
+
+    <script>
+        function mostrarImagem(src) {
+            document.getElementById("imagem").innerHTML = "<img src='" + src + "' alt='Imagem'>";
+        }
+    </script>
+</body>
+</html>

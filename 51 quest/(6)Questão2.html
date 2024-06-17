@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const userDatabase = (function () {
+    // Lista privada para armazenar os dados dos usuários
+    let users = [];
+
+    // Função para adicionar um usuário
+    function addUser(name, email, password) {
+        users.push({ name, email, password });
+    }
+
+    // Função para remover um usuário pelo email
+    function removeUser(email) {
+        users = users.filter(user => user.email !== email);
+    }
+
+    // Função para atualizar informações de um usuário pelo email
+    function updateUser(email, newInfo) {
+        const user = users.find(user => user.email === email);
+        if (user) {
+            Object.assign(user, newInfo);
+        }
+    }
+
+    // Função para obter todos os usuários (apenas para fins de teste)
+    function getUsers() {
+        return users;
+    }
+
+    // Expondo apenas as funções necessárias
+    return {
+        addUser,
+        removeUser,
+        updateUser,
+        getUsers // Esta linha deve ser removida em produção para manter a privacidade dos dados
+    };
+})();
+
+// Testando o módulo
+userDatabase.addUser("Alice", "alice@example.com", "password123");
+userDatabase.addUser("Bob", "bob@example.com", "password456");
+
+console.log(userDatabase.getUsers());
+
+userDatabase.updateUser("alice@example.com", { password: "newpassword" });
+
+console.log(userDatabase.getUsers());
+
+userDatabase.removeUser("bob@example.com");
+
+console.log(userDatabase.getUsers());
+
+    </script>
+</body>
+</html>
